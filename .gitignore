@@ -1,0 +1,45 @@
+### Backend (SpringEcom) ###
+# Build output
+SpringEcom/target/
+
+# Logs
+SpringEcom/*.log
+
+# IDE files
+SpringEcom/.idea/
+SpringEcom/*.iml
+SpringEcom/out/
+SpringEcom/.project
+SpringEcom/.classpath
+SpringEcom/.settings/
+
+### Frontend (ecom-frontend-2) ###
+# Dependencies
+ecom-frontend-2/node_modules/
+
+# Build output
+ecom-frontend-2/dist/
+ecom-frontend-2/build/
+
+# System junk
+ecom-frontend-2/.DS_Store
+ecom-frontend-2/Thumbs.db
+ecom-frontend-2/__MACOSX/
+
+# Env files
+ecom-frontend-2/.env
+
+# Logs
+ecom-frontend-2/npm-debug.log*
+ecom-frontend-2/yarn-debug.log*
+ecom-frontend-2/yarn-error.log*
+ecom-frontend-2/pnpm-debug.log*
+
+# IDE/editor settings
+ecom-frontend-2/.vscode/
+ecom-frontend-2/.idea/
+ecom-frontend-2/*.swp
+
+### Global ignores ###
+.DS_Store
+Thumbs.db
