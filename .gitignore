@@ -40,6 +40,33 @@ ecom-frontend-2/.vscode/
 ecom-frontend-2/.idea/
 ecom-frontend-2/*.swp
 
+### Frontend (ecom-frontend-ai) ###
+# Dependencies
+ecom-frontend-ai/node_modules/
+
+# Build output
+ecom-frontend-ai/dist/
+ecom-frontend-ai/build/
+
+# System junk
+ecom-frontend-ai/.DS_Store
+ecom-frontend-ai/Thumbs.db
+ecom-frontend-ai/__MACOSX/
+
+# Env files
+ecom-frontend-ai/.env
+
+# Logs
+ecom-frontend-ai/npm-debug.log*
+ecom-frontend-ai/yarn-debug.log*
+ecom-frontend-ai/yarn-error.log*
+ecom-frontend-ai/pnpm-debug.log*
+
+# IDE/editor settings
+ecom-frontend-ai/.vscode/
+ecom-frontend-ai/.idea/
+ecom-frontend-ai/*.swp
+
 ### Global ignores ###
 .DS_Store
 Thumbs.db
