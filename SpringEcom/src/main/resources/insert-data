@@ -1,13 +1,13 @@
 -- Insert dummy products into PostgreSQL
-INSERT INTO product (name, description, price, category, release_date, product_available, stock_quantity)
+INSERT INTO product (name, description, brand, price, category, release_date, product_available, stock_quantity)
 VALUES
-('Apple iPhone 15', 'Latest iPhone with advanced features', 1199.99, 'Electronics', '2025-09-01', true, 50),
-('Samsung Galaxy S25', 'High-end Android smartphone', 1099.99, 'Electronics', '2025-08-15', true, 40),
-('Sony WH-1000XM5', 'Noise-cancelling wireless headphones', 349.99, 'Electronics', '2025-07-10', true, 100),
-('Dell XPS 15 Laptop', 'Powerful laptop for professionals', 1499.99, 'Computers', '2025-06-20', true, 30),
-('Nike Air Max 270', 'Comfortable running shoes', 150.00, 'Footwear', '2025-05-01', true, 200),
-('Adidas Ultraboost', 'High-performance running shoes', 180.00, 'Footwear', '2025-04-25', true, 150),
-('The Alchemist', 'Bestselling motivational book', 15.99, 'Books', '2025-03-15', true, 500),
-('Sony 55-inch 4K TV', 'Smart TV with HDR', 699.99, 'Electronics', '2025-02-10', true, 25),
-('Logitech MX Master 3', 'Advanced wireless mouse', 99.99, 'Computers', '2025-01-05', true, 75),
-('Instant Pot Duo 7-in-1', 'Multi-functional kitchen appliance', 89.99, 'Home Appliances', '2024-12-20', true, 60);
+('Apple iPhone 15', 'Latest iPhone with advanced features', 'Apple', 1199.99, 'Electronics', '2025-09-01', true, 50),
+('Samsung Galaxy S25', 'High-end Android smartphone', 'Samsung', 1099.99, 'Electronics', '2025-08-15', true, 40),
+('Sony WH-1000XM5', 'Noise-cancelling wireless headphones', 'Sony', 349.99, 'Electronics', '2025-07-10', true, 100),
+('Dell XPS 15 Laptop', 'Powerful laptop for professionals', 'Dell', 1499.99, 'Computers', '2025-06-20', true, 30),
+('Nike Air Max 270', 'Comfortable running shoes', 'Nike', 150.00, 'Footwear', '2025-05-01', true, 200),
+('Adidas Ultraboost', 'High-performance running shoes', 'Adidas', 180.00, 'Footwear', '2025-04-25', true, 150),
+('The Alchemist', 'Bestselling motivational book', 'HarperCollins', 15.99, 'Books', '2025-03-15', true, 500),
+('Sony 55-inch 4K TV', 'Smart TV with HDR', 'Sony', 699.99, 'Electronics', '2025-02-10', true, 25),
+('Logitech MX Master 3', 'Advanced wireless mouse', 'Logitech', 99.99, 'Computers', '2025-01-05', true, 75),
+('Instant Pot Duo 7-in-1', 'Multi-functional kitchen appliance', 'Instant Brands', 89.99, 'Home Appliances', '2024-12-20', true, 60);

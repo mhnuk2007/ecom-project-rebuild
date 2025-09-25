@@ -231,6 +231,9 @@ const handleSubmit = async(e) => {
                     <option value="Electronics">Electronics</option>
                     <option value="Toys">Toys</option>
                     <option value="Fashion">Fashion</option>
+                    <option value="Footwear">Footwear</option>
+                    <option value="Books">Books</option>
+                    <option value="Home Appliances">Home Appliances</option>
                   </select>
                   {errors.category && <div className="invalid-feedback">{errors.category}</div>}
                 </div>

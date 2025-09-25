@@ -109,14 +109,6 @@ public class ProductController {
         return new ResponseEntity<>(products, HttpStatus.OK);
 
     }
-    @GetMapping("/chat/ask")
-    public ResponseEntity<String> askAi(@PathVariable String userQuery){
-        try {
-            return new ResponseEntity<>("response", HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
 
 }
 
