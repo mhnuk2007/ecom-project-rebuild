@@ -43,11 +43,33 @@ public class ProductController {
         }
     }
 
+    @PostMapping("/product/generate-description")
+    public ResponseEntity<String> generateDescription(@RequestParam String name, @RequestParam String category) {
+        try {
+            String description = productService.generateDescription(name, category);
+            return new ResponseEntity<>(description, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PostMapping("/product/generate-image")
+    public ResponseEntity<?> generateImage(@RequestParam String name, @RequestParam String category, @RequestParam String description) {
+        try {
+            byte[] aiImage = productService.generateImage(name, category, description);
+            return new ResponseEntity<>(aiImage, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+
+    }
+
     @GetMapping("/product/{id}/image")
     public ResponseEntity<byte[]> getProductImage(@PathVariable int id) {
         Product product = productService.getProductById(id);
         if (product.getId() > 0) {
-            return new  ResponseEntity<>(product.getImageData(), HttpStatus.OK);
+            return new ResponseEntity<>(product.getImageData(), HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
@@ -64,8 +86,7 @@ public class ProductController {
             } catch (Exception e) {
                 return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
             }
-        }
-        else {
+        } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
@@ -82,12 +103,21 @@ public class ProductController {
     }
 
     @GetMapping("/products/search")
-    public ResponseEntity<List<Product>> searchProducts(@RequestParam String keyword){
+    public ResponseEntity<List<Product>> searchProducts(@RequestParam String keyword) {
         List<Product> products = productService.searchProducts(keyword);
         System.out.println("searching with " + keyword);
         return new ResponseEntity<>(products, HttpStatus.OK);
 
     }
+    @GetMapping("/chat/ask")
+    public ResponseEntity<String> askAi(@PathVariable String userQuery){
+        try {
+            return new ResponseEntity<>("response", HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
 }
 
 

@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 public record OrderResponse(
-        int orderId,
+        String orderId,
         String customerName,
         String email,
         String status,
